@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">ISports-C</string>
+
+    <!-- Strings related to login -->
+    <string name="facebook_app_id">3198555346882604</string>
+    <string name="fb_login_protocol_scheme">fb3198555346882604</string>
+    <!-- Facebook -->
+    <string name="reset_password_now">Reset Password</string>
+    <string name="Remember_me">Remember Me</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="resend_verification_email">Resend Verification Email</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="tabian_consulting_logo">Tabian Consulting Logo</string>
+    <string name="email_registration">Email Registration</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+
+
+    <!-- Firestore Strings -->
+    <string name="collection_users">Users</string>
+    <string name="collection_chatrooms">Game</string>
+    <string name="collection_chat_messages">Chat Messages</string>
+    <string name="collection_chatroom_user_list">User List</string>
+
+    <!-- Intent extras -->
+    <string name="intent_chatroom">intent_chatroom</string>
+    <string name="intent_user_list">intent_user_list</string>
+
+    <!-- Fragments Names -->
+    <string name="fragment_user_list">User List</string>
+
+    <!-- Other Strings -->
+    <string name="action_create_chatroom">Create Chatroom</string>
+    <string name="action_leave_chatroom">Leave game</string>
+    <string name="action_chatroom_user_list">User list</string>
+    <string name="active_games">Active Games</string>
+    <string name="new_message">new message...</string>
+    <string name="Bet">Bet</string>
+    <string name="item_detail_here">Item Detail Here...</string>
+    <string name="todo">TODO</string>
+
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="find_location">Find Location</string>
+    <string name="Create_SpecialGame">Special Games</string>
+    <string name="check_remember">Remember Me</string>
+    <string name="show_password">show password</string>
+
+
+</resources>
