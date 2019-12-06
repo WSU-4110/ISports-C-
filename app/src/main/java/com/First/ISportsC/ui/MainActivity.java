@@ -22,7 +22,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.First.ISportsC.ui.LocationActivity;
 import com.First.ISportsC.R;
 import com.First.ISportsC.adapters.ChatroomRecyclerAdapter;
 import com.First.ISportsC.models.Game;
@@ -94,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements
         FindLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(intent);
             }
         });

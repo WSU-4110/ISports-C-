@@ -16,10 +16,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class resetPasswordActivity extends AppCompatActivity {
+import java.util.Objects;
 
+public class resetPasswordActivity extends AppCompatActivity {
     private Toolbar mToolbar;
-    private Button ResetPassword;
     private EditText resetEmail;
     private FirebaseAuth mAuth;
 
@@ -29,12 +29,12 @@ public class resetPasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reset_password);
 
 
-        mAuth= FirebaseAuth.getInstance();
+        mAuth=FirebaseAuth.getInstance();
 
-        ResetPassword= (Button) findViewById(R.id.resetPassword);
+        Button resetPassword = (Button) findViewById(R.id.resetPassword);
         resetEmail =(EditText) findViewById(R.id.TypeEmail);
 
-        ResetPassword.setOnClickListener(new View.OnClickListener() {
+        resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String userEmail=  resetEmail.getText().toString();
@@ -48,11 +48,12 @@ public class resetPasswordActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
                                 Toast.makeText(resetPasswordActivity.this, "Check Your Email For Password Reset", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(resetPasswordActivity.this, MainActivity.class));
+                                startActivity(new Intent(resetPasswordActivity.this,MainActivity.class));
                             }
 
                             else{
-                                String message= task.getException().getMessage();
+                                String message;
+                                message = Objects.requireNonNull(task.getException()).getMessage();
                                 Toast.makeText(resetPasswordActivity.this, "Error Occured",Toast.LENGTH_SHORT).show();
                             }
                         }

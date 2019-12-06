@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity implements
 
     private static final String TAG = "LoginActivity";
 
-    //Firebase
+    //Firebase;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
     // widgets

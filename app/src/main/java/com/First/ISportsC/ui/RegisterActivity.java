@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.First.ISportsC.R;
@@ -37,6 +38,7 @@ public class RegisterActivity extends AppCompatActivity implements
     //widgets
     private EditText mEmail, mPassword, mConfirmPassword;
     private ProgressBar mProgressBar;
+    private TextView cardInfo;
 
     //vars
     private FirebaseFirestore mDb;
@@ -56,6 +58,16 @@ public class RegisterActivity extends AppCompatActivity implements
         mDb = FirebaseFirestore.getInstance();
 
         hideSoftKeyboard();
+
+        cardInfo=findViewById(R.id.cardInfo);
+        cardInfo.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(RegisterActivity.this,cardInfoActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     /**
@@ -170,6 +182,7 @@ public class RegisterActivity extends AppCompatActivity implements
                 break;
             }
         }
+
     }
 
 }
